@@ -1,0 +1,183 @@
+*{
+	padding: 0;
+	margin: 0;
+	text text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+.heading-with-logo {
+	background-image: url('latihan/images/aircon.jpeg');
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	background-position: left center;
+	padding-left: 30px;
+	display: inline-block;
+}
+
+label.logo{
+	color: white;
+	font-size: 50px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: left center;
+	padding: 10px 20px;
+	background-color: #1428a0;
+	color: #1428a0;
+	border-radius: 0px;
+}
+
+.hamburger{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.line{
+	width: 25px;
+	height: 3px;
+	background-color: white;
+	margin: 4px 0;
+	transition: 0.4s;
+}
+
+.nav-menu a {
+    padding: 15px;
+    font-family: geneva;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid lightgrey;
+    border-radius: 100px;
+}
+
+.nav-menu a:hover {
+    background-color: #555;
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 10px; /* Kurangi jarak antar item */
+    }
+     .nav-menu a {
+        font-size: 14px; /* Kurangi ukuran teks */
+        padding: 8px; /* Kurangi padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-menu {
+        display: none; /* Sembunyikan menu */
+    }
+
+    .hamburger {
+        display: block; /* Tampilkan hamburger */
+    }
+}
+
+.hamburger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav-menu.active {
+    display: flex;
+}
+
+
+.box {
+    background-color: #ffffff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+p {
+    color: #666;
+    font-size: 14px;
+}
+
+
+body{
+	font-family: arial;
+}
+
+a.active,a:hover{
+	background: lightgrey;
+	transition: .5s;
+}
+
+.indent-paragraph {
+    text-indent: 30px; 
+}
+
+.audio-container {
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    width: 100px; 
+    height: auto;
+}
+
+.text {
+    margin-left: 10px; 
+}
+
+
+.map-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+.map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
